@@ -24,6 +24,7 @@ const Movies = () => {
           "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOWUxY2Q0ZTI1MDhhOGE5MGQ2YmI0MmFhNjVmODhhMiIsInN1YiI6IjY0YzhjMmU2MWZhMWM4MDBiMGMxODQ4NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DzcG0yj-kAk0W0FITT2ueckU8oJFfXb1xhS0VNnEvZA",
       },
     };
+
     setIsFetching(true);
     setError("");
     try {
@@ -51,7 +52,7 @@ const Movies = () => {
   }, [inView]);
 
   return (
-    <div className="container mx-auto px-4 py-9">
+    <div className="wrapper">
       <div className=" fixed bottom-5 right-5 bg-red-950 text-white p-4 z-50">
         {inView ? "In View" : "Not in View"}
       </div>

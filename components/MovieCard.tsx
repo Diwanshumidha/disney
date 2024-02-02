@@ -12,7 +12,7 @@ const MovieCard = ({ movie }: { movie: Movie }) => {
           width={300}
           placeholder={`blur`}
           height={400}
-          blurDataURL={`https://image.tmdb.org/t/p/w200/${poster_path}`}
+          blurDataURL={`https://image.tmdb.org/t/p/w200${poster_path}`}
           className="hover:scale-95 transition-all   object-cover bg-blue-950 "
           src={`https://image.tmdb.org/t/p/w500${poster_path}`}
           alt={title}
