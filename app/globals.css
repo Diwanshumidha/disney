@@ -30,4 +30,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
